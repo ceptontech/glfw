@@ -240,6 +240,7 @@ GLFWAPI int glfwInit(void)
         terminate();
         return GLFW_FALSE;
     }
+    // _glfwInitVulkan();
 
     _glfwPlatformSetTls(&_glfw.errorSlot, &_glfwMainThreadError);
 
